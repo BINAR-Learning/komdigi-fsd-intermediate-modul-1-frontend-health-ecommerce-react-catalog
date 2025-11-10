@@ -4,7 +4,7 @@
 
 [![React](https://img.shields.io/badge/React-18+-blue)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-4.5-purple)](https://vitejs.dev/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-cyan)](https://tailwindcss.com/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-cyan)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 Product catalog frontend untuk Health E-Commerce - built dengan React 18, Vite, TailwindCSS, dan terintegrasi dengan backend API.
