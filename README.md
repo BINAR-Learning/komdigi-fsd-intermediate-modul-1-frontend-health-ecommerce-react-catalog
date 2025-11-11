@@ -1,4 +1,4 @@
-# ⚛️ health-ecommerce-react-catalog
+# health-ecommerce-react-catalog
 
 > **React Product Catalog dengan TailwindCSS & Backend Integration**
 
@@ -11,14 +11,14 @@ Product catalog frontend untuk Health E-Commerce - built dengan React 18, Vite, 
 
 ---
 
-## 📦 Apa yang Ada di Repository Ini?
+## Apa yang Ada di Repository Ini?
 
 Repository ini berisi **2 versi project**:
 
 ```
 health-ecommerce-react-catalog/
 ├── README.md (Ini file yang kamu baca)
-├── starter-project/     # 📝 Untuk practice (dengan TODO)
+├── starter-project/     #  Untuk practice (dengan TODO)
 │   ├── README.md
 │   ├── package.json
 │   ├── src/
@@ -27,7 +27,7 @@ health-ecommerce-react-catalog/
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   └── index.html
-└── finished-project/    # ✅ Complete implementation
+└── finished-project/    #  Complete implementation
     ├── README.md
     ├── package.json
     ├── src/
@@ -45,20 +45,20 @@ health-ecommerce-react-catalog/
 
 ---
 
-## 🚀 Quick Start (Untuk Newbie)
+## Quick Start (Untuk Newbie)
 
 ### Prerequisites
 
 Sebelum mulai, pastikan:
 
-- ✅ **ULTIMATE BACKEND running** di `http://localhost:5000`
-  - **Repository:** `health-ecommerce-ai-integration` (Backend Modul 5)
-  - **Project:** `finished-project/`
-  - **Contains:** ALL endpoints dari Modul 1-5 (Products, Auth, AI, Payment)
-- ✅ **Node.js v18+** installed
-- ✅ **Text editor** (VS Code recommended)
+- **ULTIMATE BACKEND running** di `http://localhost:5000`
+- **Repository:** `health-ecommerce-ai-integration` (Backend Modul 5)
+- **Project:** `finished-project/`
+- **Contains:** ALL endpoints dari Modul 1-5 (Products, Auth, AI, Payment)
+- **Node.js v18+** installed
+- **Text editor** (VS Code recommended)
 
-**📍 Setup ULTIMATE Backend:**
+** Setup ULTIMATE Backend:**
 
 ```bash
 # Clone backend
@@ -144,49 +144,49 @@ npm run dev
 
 ---
 
-## 🎯 Apa yang Akan Kamu Bangun?
+## Apa yang Akan Kamu Bangun?
 
 **Health Product Catalog** - Frontend untuk Health E-Commerce!
 
 ### Features:
 
-- ✅ **Product Listing** - Fetch real data dari backend localhost:5000
-- ✅ **Search** - Search products by name/description
-- ✅ **Category Filter** - Vitamin, Supplement, Medicine, Equipment
-- ✅ **Responsive** - Works di mobile, tablet, desktop
-- ✅ **Loading States** - Spinner saat fetch data
-- ✅ **Error Handling** - User-friendly error messages
-- ✅ **Beautiful UI** - Modern design dengan Tailwind
+- **Product Listing** - Fetch real data dari backend localhost:5000
+- **Search** - Search products by name/description
+- **Category Filter** - Vitamin, Supplement, Medicine, Equipment
+- **Responsive** - Works di mobile, tablet, desktop
+- **Loading States** - Spinner saat fetch data
+- **Error Handling** - User-friendly error messages
+- **Beautiful UI** - Modern design dengan Tailwind
 
 ### Tech Stack:
 
-- ⚛️ **React 18** - UI library
-- ⚡ **Vite** - Build tool (super fast!)
-- 🎨 **TailwindCSS** - Utility-first CSS
-- 🔌 **Axios** - HTTP client untuk API calls
+- **React 18** - UI library
+- **Vite** - Build tool (super fast!)
+- **TailwindCSS** - Utility-first CSS
+- **Axios** - HTTP client untuk API calls
 
 ---
 
-## 📁 Struktur Starter Project
+## Struktur Starter Project
 
 ```
 starter-project/
 ├── public/                 # Static assets
 ├── src/
 │   ├── components/
-│   │   ├── ProductCard.jsx        # ⚠️ TODO: Product card component
-│   │   ├── CategoryFilter.jsx     # ⚠️ TODO: Category filter buttons
-│   │   ├── SearchBar.jsx          # ⚠️ TODO: Search input
-│   │   └── LoadingSpinner.jsx     # ✅ Loading component (ready!)
+│   │   ├── ProductCard.jsx        #  TODO: Product card component
+│   │   ├── CategoryFilter.jsx     #  TODO: Category filter buttons
+│   │   ├── SearchBar.jsx          #  TODO: Search input
+│   │   └── LoadingSpinner.jsx     #  Loading component (ready!)
 │   ├── services/
-│   │   └── api.js                 # ⚠️ TODO: Axios API calls
-│   ├── App.jsx                    # ⚠️ TODO: Main app logic
-│   ├── main.jsx                   # ✅ Entry point (ready!)
-│   └── index.css                  # ✅ Tailwind imports (ready!)
-├── index.html                      # ✅ HTML template
+│   │   └── api.js                 #  TODO: Axios API calls
+│   ├── App.jsx                    #  TODO: Main app logic
+│   ├── main.jsx                   #  Entry point (ready!)
+│   └── index.css                  #  Tailwind imports (ready!)
+├── index.html                      #  HTML template
 ├── package.json                    # Dependencies
-├── tailwind.config.js              # ✅ Tailwind config
-└── vite.config.js                  # ✅ Vite config
+├── tailwind.config.js              #  Tailwind config
+└── vite.config.js                  #  Vite config
 ```
 
 **TODOs:**
@@ -199,40 +199,40 @@ starter-project/
 
 ---
 
-## 📁 Struktur Finished Project
+## Struktur Finished Project
 
 ```
 finished-project/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   ├── ProductCard.jsx        # ✅ Complete dengan hover effects
-│   │   ├── CategoryFilter.jsx     # ✅ Active state & icons
-│   │   ├── SearchBar.jsx          # ✅ Search dengan loading state
-│   │   ├── LoadingSpinner.jsx     # ✅ Animated spinner
-│   │   ├── ErrorMessage.jsx       # ✅ Error display
-│   │   └── Header.jsx             # ✅ App header
+│   │   ├── ProductCard.jsx        #  Complete dengan hover effects
+│   │   ├── CategoryFilter.jsx     #  Active state & icons
+│   │   ├── SearchBar.jsx          #  Search dengan loading state
+│   │   ├── LoadingSpinner.jsx     #  Animated spinner
+│   │   ├── ErrorMessage.jsx       #  Error display
+│   │   └── Header.jsx             #  App header
 │   ├── services/
-│   │   └── api.js                 # ✅ Complete API service
-│   ├── App.jsx                    # ✅ Full integration
-│   ├── main.jsx                   # ✅ Entry point
-│   └── index.css                  # ✅ Tailwind + custom styles
+│   │   └── api.js                 #  Complete API service
+│   ├── App.jsx                    #  Full integration
+│   ├── main.jsx                   #  Entry point
+│   └── index.css                  #  Tailwind + custom styles
 ├── package.json
 └── ... config files
 ```
 
 **All features implemented:**
 
-- ✅ Real-time product fetching
-- ✅ Search functionality
-- ✅ Category filtering
-- ✅ Responsive grid layout
-- ✅ Loading & error states
-- ✅ Beautiful Tailwind styling
+- Real-time product fetching
+- Search functionality
+- Category filtering
+- Responsive grid layout
+- Loading & error states
+- Beautiful Tailwind styling
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### 1. Test Backend Connection
 
@@ -263,35 +263,35 @@ npm run dev
 
 ---
 
-## 🆚 Perbedaan Starter vs Finished
+## Perbedaan Starter vs Finished
 
-| Aspect               | Starter                    | Finished                            |
-| -------------------- | -------------------------- | ----------------------------------- |
-| **Components**       | ⚠️ Basic structure + TODOs | ✅ Complete dengan all features     |
-| **API Integration**  | ⚠️ Template code           | ✅ Working Axios calls              |
-| **Styling**          | ⚠️ Minimal Tailwind        | ✅ Production-ready design          |
-| **State Management** | ⚠️ Basic useState          | ✅ Multiple states coordinated      |
-| **Error Handling**   | ❌ Not implemented         | ✅ Comprehensive handling           |
-| **Responsive**       | ⚠️ Basic grid              | ✅ Fully responsive (4 breakpoints) |
-| **Loading States**   | ❌ Missing                 | ✅ Spinner & skeleton screens       |
+| Aspect               | Starter                 | Finished                         |
+| -------------------- | ----------------------- | -------------------------------- |
+| **Components**       | Basic structure + TODOs | Complete dengan all features     |
+| **API Integration**  | Template code           | Working Axios calls              |
+| **Styling**          | Minimal Tailwind        | Production-ready design          |
+| **State Management** | Basic useState          | Multiple states coordinated      |
+| **Error Handling**   | Not implemented         | Comprehensive handling           |
+| **Responsive**       | Basic grid              | Fully responsive (4 breakpoints) |
+| **Loading States**   | Missing                 | Spinner & skeleton screens       |
 
 **Use starter when:**
 
-- 📝 Learning React fundamentals
-- 📝 Want hands-on practice
-- 📝 Building portfolio projects
+- Learning React fundamentals
+- Want hands-on practice
+- Building portfolio projects
 
 **Use finished when:**
 
-- 🔍 Stuck dan butuh reference
-- 🔍 Want best practice examples
-- 🔍 Learning production patterns
+- Stuck dan butuh reference
+- Want best practice examples
+- Learning production patterns
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
-### ❌ "Failed to fetch products"
+### "Failed to fetch products"
 
 **Solusi:**
 
@@ -306,7 +306,7 @@ npm run dev
 # 3. Check port correct (5000, not 3000!)
 ```
 
-### ❌ "Module not found: axios"
+### "Module not found: axios"
 
 **Solusi:**
 
@@ -314,7 +314,7 @@ npm run dev
 npm install axios
 ```
 
-### ❌ Tailwind classes tidak working
+### Tailwind classes tidak working
 
 **Solusi:**
 
@@ -322,7 +322,7 @@ npm install axios
 2. Restart dev server: `Ctrl+C` → `npm run dev`
 3. Clear browser cache
 
-### ❌ "Port 5173 already in use"
+### "Port 5173 already in use"
 
 **Solusi:**
 
@@ -337,7 +337,7 @@ npm run dev -- --port 3001
 
 ---
 
-## 💡 Tips Development
+## Tips Development
 
 1. **Keep backend running** - Frontend butuh API
 2. **Use React DevTools** - Debug components easily
@@ -348,7 +348,7 @@ npm run dev -- --port 3001
 
 ---
 
-## 📚 Resources
+## Resources
 
 **Documentation:**
 
@@ -363,26 +363,26 @@ npm run dev -- --port 3001
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 After completing this module:
 
-1. ✅ **Test all features** - Search, filter, responsive
-2. ✅ **Deploy to Netlify/Vercel** - Share your work!
-3. ➡️ **Frontend Modul 2** - React Router, React Query, Next.js intro
-4. ➡️ **Frontend Modul 3** - UI/UX best practices, Playwright
-5. 🎨 **Customize design** - Make it yours!
+1.  **Test all features** - Search, filter, responsive
+2.  **Deploy to Netlify/Vercel** - Share your work!
+3.  **Frontend Modul 2** - React Router, React Query, Next.js intro
+4.  **Frontend Modul 3** - UI/UX best practices, Playwright
+5.  **Customize design** - Make it yours!
 
 ---
 
-**Happy Reacting! ⚛️**
+**Happy Reacting! **
 
 _Frontend Modul 1 - React Fundamentals_  
 _Connecting to Health E-Commerce Backend API_
 
 ---
 
-**📁 Repository Info:**
+** Repository Info:**
 
 - **Name:** `health-ecommerce-react-catalog`
 - **Type:** React Frontend (Product Catalog)

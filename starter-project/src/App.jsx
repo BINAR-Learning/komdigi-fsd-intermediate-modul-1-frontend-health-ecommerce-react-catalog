@@ -1,6 +1,6 @@
 /**
  * Health E-Commerce - Main App Component
- * 
+ *
  * TODO untuk Peserta:
  * 1. Import useState dan useEffect dari React
  * 2. Import axios untuk API calls
@@ -12,7 +12,7 @@
  * 8. Render products dalam responsive grid
  */
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 // TODO: Import axios
 // import axios from 'axios';
 
@@ -29,7 +29,7 @@ function App() {
   // const [selectedCategory, setSelectedCategory] = useState('All');
   // const [loading, setLoading] = useState(true);
   // const [error, setError] = useState(null);
-  
+
   // TODO: Fetch products saat component mount
   // useEffect(() => {
   //   const fetchProducts = async () => {
@@ -44,10 +44,10 @@ function App() {
   //       setLoading(false);
   //     }
   //   };
-  //   
+  //
   //   fetchProducts();
   // }, []);
-  
+
   // TODO: Filter products by category
   // useEffect(() => {
   //   if (selectedCategory === 'All') {
@@ -58,24 +58,25 @@ function App() {
   //     );
   //   }
   // }, [selectedCategory, products]);
-  
+
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <h1 className="text-3xl font-bold text-gray-900">
-            🏥 Health E-Commerce
+            Health E-Commerce
           </h1>
           <p className="text-gray-600 mt-1">
-            ⚠️ TODO: Lengkapi component ini untuk fetch & display products
+            TODO: Lengkapi component ini untuk fetch & display products
           </p>
         </div>
       </header>
-      
+
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
           <p className="text-yellow-700">
-            📝 <strong>Starter Project</strong> - Lengkapi TODOs untuk build complete product catalog!
+            <strong>Starter Project</strong> - Lengkapi TODOs untuk build
+            complete product catalog!
           </p>
           <ul className="mt-2 text-sm text-yellow-600 list-disc list-inside">
             <li>Setup state untuk products & filters</li>
@@ -84,7 +85,7 @@ function App() {
             <li>Implement search & category filter</li>
           </ul>
         </div>
-        
+
         {/* TODO: Render components here */}
       </main>
     </div>
@@ -92,4 +93,3 @@ function App() {
 }
 
 export default App;
-
