@@ -49,30 +49,32 @@ health-ecommerce-react-catalog/
 
 ### Prerequisites
 
-Sebelum mulai, pastikan:
+Sebelum mulai, pastikan backend API tersedia di `http://localhost:5000`.
 
-- **ULTIMATE BACKEND running** di `http://localhost:5000`
-- **Repository:** `health-ecommerce-ai-integration` (Backend Modul 5)
-- **Project:** `finished-project/`
-- **Contains:** ALL endpoints dari Modul 1-5 (Products, Auth, AI, Payment)
-- **Node.js v18+** installed
-- **Text editor** (VS Code recommended)
+PENTING - Backend (Modul 5):
 
-** Setup ULTIMATE Backend:**
+Jangan lupa clone dan jalankan Backend dari Modul 5 (repo external integration) atau gunakan link berikut:
+
+https://github.com/BINAR-Learning/health-ecommerce-external-integration
+
+Contoh perintah singkat:
 
 ```bash
-# Clone backend
-git clone https://github.com/your-username/health-ecommerce-ai-integration.git
-cd health-ecommerce-ai-integration/finished-project
+# Clone backend Modul 5
+git clone https://github.com/BINAR-Learning/health-ecommerce-external-integration.git
+cd health-ecommerce-external-integration/finished-project
 
-# Install & seed
+# Install dependencies (jika perlu seed data)
 npm install
+# Jika repo backend menyediakan seed:
 npm run seed
 
-# Start (keep running!)
+# Start backend (keep running di terminal terpisah)
 npm run dev
-# → Backend ready di http://localhost:5000
+# Backend akan tersedia di http://localhost:5000
 ```
+
+Jika instruksi di repo backend berbeda, ikuti README di repo tersebut.
 
 ### Option 1: Practice dengan Starter Project
 

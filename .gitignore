@@ -1,0 +1,3 @@
+# Ignore markdown files in this module except README.md
+**/*.md
+!**/README.md
