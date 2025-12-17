@@ -1,13 +1,13 @@
 function CategoryFilter({ selectedCategory, onCategoryChange }) {
   const categories = [
     { value: "All", label: "Semua Produk", icon: "", color: "blue" },
-    { value: "Vitamin", label: "Vitamin", icon: "💊", color: "green" },
+    { value: "Vitamin", label: "Vitamin", icon: "", color: "green" },
     { value: "Supplement", label: "Suplemen", icon: "", color: "emerald" },
     { value: "Medicine", label: "Obat", icon: "", color: "red" },
     {
       value: "Medical Equipment",
       label: "Alat Medis",
-      icon: "🩺",
+      icon: "",
       color: "purple",
     },
   ];

@@ -38,11 +38,11 @@ function App() {
 
       const response = await axios.get(`${API_BASE_URL}/products`);
 
-      console.log(" Products loaded:", response.data.count);
+      console.log("Products loaded:", response.data.count);
       setProducts(response.data.data);
       setFilteredProducts(response.data.data);
     } catch (err) {
-      console.error(" Fetch Error:", err);
+      console.error("Fetch Error:", err);
 
       if (err.code === "ERR_NETWORK") {
         setError(
@@ -159,7 +159,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 py-6 text-center text-gray-600">
           <p>Built with React + Vite + TailwindCSS</p>
           <p className="text-sm mt-1">
-            © 2024 Health E-Commerce - Pusbang Talenta Digital
+            © 2025 Health E-Commerce - Pusbang Talenta Digital
           </p>
         </div>
       </footer>

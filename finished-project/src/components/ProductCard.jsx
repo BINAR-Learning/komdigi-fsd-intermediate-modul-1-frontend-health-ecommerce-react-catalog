@@ -66,7 +66,7 @@ function ProductCard({ product }) {
             `}
             disabled={product.stock === 0}
           >
-            {product.stock === 0 ? 'Habis' : isHovered ? '🛒 Beli' : 'Lihat'}
+            {product.stock === 0 ? 'Habis' : isHovered ? 'Beli' : 'Lihat'}
           </button>
         </div>
       </div>
