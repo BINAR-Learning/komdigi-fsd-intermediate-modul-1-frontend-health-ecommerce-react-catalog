@@ -64,26 +64,37 @@ function App() {
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <h1 className="text-3xl font-bold text-gray-900">
-            Health E-Commerce
+            Health E-Commerce - Product Catalog
           </h1>
           <p className="text-gray-600 mt-1">
-            TODO: Lengkapi component ini untuk fetch & display products
+            Starter Project - Lengkapi component ini untuk fetch & display products
           </p>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-4 py-8">
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6">
-          <p className="text-yellow-700">
-            <strong>Starter Project</strong> - Lengkapi TODOs untuk build
-            complete product catalog!
+        <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-6 rounded-lg">
+          <h2 className="text-xl font-semibold text-blue-800 mb-3">
+            Welcome to Starter Project!
+          </h2>
+          <p className="text-blue-700 mb-4">
+            Ini adalah starter template untuk belajar. Silakan implementasikan App component sesuai dengan TODO comments di file ini.
           </p>
-          <ul className="mt-2 text-sm text-yellow-600 list-disc list-inside">
-            <li>Setup state untuk products & filters</li>
-            <li>Fetch data dari localhost:5000/api/products</li>
-            <li>Create ProductCard component</li>
-            <li>Implement search & category filter</li>
-          </ul>
+          <div className="bg-white p-4 rounded border border-blue-200">
+            <h3 className="font-semibold text-blue-800 mb-2">Langkah selanjutnya:</h3>
+            <ol className="list-decimal list-inside space-y-2 text-blue-700 text-sm">
+              <li>Buka file <code className="bg-blue-100 px-2 py-1 rounded">src/App.jsx</code></li>
+              <li>Ikuti TODO comments untuk implementasi</li>
+              <li>Lihat <code className="bg-blue-100 px-2 py-1 rounded">../finished-project/src/App.jsx</code> sebagai reference</li>
+              <li>Setup state untuk products & filters</li>
+              <li>Fetch data dari localhost:5000/api/products</li>
+              <li>Create ProductCard component</li>
+              <li>Implement search & category filter</li>
+            </ol>
+          </div>
+          <p className="text-sm text-blue-600 mt-4">
+            Baca README.md untuk instruksi lengkap
+          </p>
         </div>
 
         {/* TODO: Render components here */}
