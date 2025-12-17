@@ -1,9 +1,9 @@
-# health-ecommerce-react-catalog
+# komdigi-fsd-intermediate-modul-1-frontend-health-ecommerce-react-catalog
 
 > **React Product Catalog dengan TailwindCSS & Backend Integration**
 
 [![React](https://img.shields.io/badge/React-18+-blue)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-4.5-purple)](https://vitejs.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5.0-purple)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-cyan)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
@@ -16,7 +16,7 @@ Product catalog frontend untuk Health E-Commerce - built dengan React 18, Vite, 
 Repository ini berisi **2 versi project**:
 
 ```
-health-ecommerce-react-catalog/
+komdigi-fsd-intermediate-modul-1-frontend-health-ecommerce-react-catalog/
 ├── README.md (Ini file yang kamu baca)
 ├── starter-project/     #  Untuk practice (dengan TODO)
 │   ├── README.md
@@ -53,26 +53,71 @@ Sebelum mulai, pastikan backend API tersedia di `http://localhost:5000`.
 
 PENTING - Backend (Modul 5):
 
-Jangan lupa clone dan jalankan Backend dari Modul 5 (repo external integration) atau gunakan link berikut:
+Jangan lupa running project final backend dari Modul 5 di backend modul program intermediate ini. Backend yang harus digunakan adalah `komdigi-fsd-intermediate-modul-5-backend-health-ecommerce-external-integration` dari folder `backend/health-ecommerce-external-integration/finished-project`.
 
-https://github.com/BINAR-Learning/health-ecommerce-external-integration
+Langkah-langkah setup backend:
 
-Contoh perintah singkat:
+1. Masuk ke folder backend Modul 5:
 
 ```bash
-# Clone backend Modul 5
-git clone https://github.com/BINAR-Learning/health-ecommerce-external-integration.git
-cd health-ecommerce-external-integration/finished-project
-
-# Install dependencies (jika perlu seed data)
-npm install
-# Jika repo backend menyediakan seed:
-npm run seed
-
-# Start backend (keep running di terminal terpisah)
-npm run dev
-# Backend akan tersedia di http://localhost:5000
+cd backend/health-ecommerce-external-integration/finished-project
 ```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Setup file `.env`:
+
+   - Buat file `.env` di folder `finished-project` (copy dari `.env.example` jika ada)
+   - Set minimal environment variables berikut:
+     ```env
+     NODE_ENV=development
+     PORT=5000
+     MONGODB_URI=mongodb://localhost:27017/health-ecommerce
+     JWT_SECRET=your-super-secret-jwt-key-change-in-production-min-32-characters
+     JWT_EXPIRES_IN=24h
+     ```
+   - Untuk fitur tambahan (optional), bisa set:
+     - `GOOGLE_AI_API_KEY` (untuk AI chatbot)
+     - `CLOUDINARY_*` (untuk image upload)
+     - `MIDTRANS_*` (untuk payment)
+     - `SMTP_*` (untuk email service)
+     - `KEMENKES_API_KEY` (untuk Kemenkes integration)
+
+4. Pastikan MongoDB running:
+
+   - Tidak perlu menjalankan `mongod` jika tidak jalan di localmu
+   - Pastikan saja MongoDB jalan dengan caramu, misalnya:
+     - Membuka MongoDB Compass dan akses database yang kamu tuju (misalnya local db mu)
+     - Jika MongoDB Compass sudah bisa connect ke `mongodb://localhost:27017`, berarti MongoDB sudah jalan
+     - Atau jika pakai MongoDB Atlas, pastikan cluster sudah active
+     - Intinya: Pastikan MongoDB bisa diakses sesuai MONGODB_URI yang kamu set di .env
+
+5. Seed data (optional, jika ada):
+
+```bash
+npm run seed
+```
+
+6. Start backend (keep running di terminal terpisah):
+
+```bash
+npm run dev
+```
+
+7. Verifikasi backend running:
+
+   - Backend akan tersedia di `http://localhost:5000`
+   - Test dengan: `curl http://localhost:5000/health` atau buka di browser
+   - Pastikan response success
+
+8. Set environment variable di frontend:
+   - Di file `.env` di frontend project (jika ada), atau langsung di code, pastikan URL backend sama dengan yang dirun
+   - Default: `http://localhost:5000/api`
+   - Jika backend running di port lain, update URL di `src/services/api.js` atau `src/App.jsx`
 
 Jika instruksi di repo backend berbeda, ikuti README di repo tersebut.
 
@@ -80,10 +125,10 @@ Jika instruksi di repo backend berbeda, ikuti README di repo tersebut.
 
 ```bash
 # 1. Clone repository ini
-git clone https://github.com/your-username/health-ecommerce-react-catalog.git
+git clone https://github.com/your-username/komdigi-fsd-intermediate-modul-1-frontend-health-ecommerce-react-catalog.git
 
 # 2. Masuk ke folder repository
-cd health-ecommerce-react-catalog
+cd komdigi-fsd-intermediate-modul-1-frontend-health-ecommerce-react-catalog
 
 # 3. Masuk ke starter-project
 cd starter-project
@@ -115,10 +160,10 @@ Kamu akan lihat starter template dengan TODOs!
 
 ```bash
 # 1. Clone repository (jika belum)
-git clone https://github.com/your-username/health-ecommerce-react-catalog.git
+git clone https://github.com/your-username/komdigi-fsd-intermediate-modul-1-frontend-health-ecommerce-react-catalog.git
 
 # 2. Masuk ke folder repository
-cd health-ecommerce-react-catalog
+cd komdigi-fsd-intermediate-modul-1-frontend-health-ecommerce-react-catalog
 
 # 3. Masuk ke finished-project
 cd finished-project
@@ -134,13 +179,9 @@ npm run dev
 
 **Sebelum test, pastikan backend running:**
 
-```bash
-# Di terminal terpisah:
-cd path/to/backend/finished-project
-npm run dev
+Pastikan backend Modul 5 (`komdigi-fsd-intermediate-modul-5-backend-health-ecommerce-external-integration`) sudah running. Lihat instruksi detail di bagian "PENTING - Backend (Modul 5)" di atas.
 
-# Backend must run di http://localhost:5000
-```
+Backend harus running di `http://localhost:5000` (atau sesuai dengan yang kamu set di `.env` backend). Pastikan URL backend di frontend sama dengan URL backend yang dirun.
 
 **Expected:** Complete product catalog with search, filter, responsive layout!
 
@@ -240,9 +281,15 @@ finished-project/
 
 ```bash
 # Make sure backend running:
+# Pastikan backend Modul 5 sudah running di http://localhost:5000
 curl http://localhost:5000/api/products
 
 # Should return JSON with products
+# Jika error, pastikan:
+# 1. Backend sudah running (npm run dev di folder backend/health-ecommerce-external-integration/finished-project)
+# 2. MongoDB sudah running dan bisa diakses
+# 3. File .env di backend sudah diset dengan benar
+# 4. Port 5000 tidak digunakan aplikasi lain
 ```
 
 ### 2. Test Frontend
@@ -377,7 +424,7 @@ After completing this module:
 
 ---
 
-**Happy Reacting! **
+**Happy Reacting!**
 
 _Frontend Modul 1 - React Fundamentals_  
 _Connecting to Health E-Commerce Backend API_
@@ -386,7 +433,7 @@ _Connecting to Health E-Commerce Backend API_
 
 ** Repository Info:**
 
-- **Name:** `health-ecommerce-react-catalog`
+- **Name:** `komdigi-fsd-intermediate-modul-1-frontend-health-ecommerce-react-catalog`
 - **Type:** React Frontend (Product Catalog)
-- **Backend:** Connects to `localhost:5000`
+- **Backend:** Connects to `localhost:5000` (Backend Modul 5: `komdigi-fsd-intermediate-modul-5-backend-health-ecommerce-external-integration`)
 - **Structure:** 1 Repo, 2 Folders (starter + finished)
